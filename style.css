@@ -1,0 +1,250 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* common class */
+.common-btn{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 5px;
+}
+.p-text{
+    color: #727272;
+}
+
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10vw;
+    gap: 10px;
+}
+nav h1{
+    font-size: 3rem;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    list-style: none;
+}
+.banner{
+    padding: 0px 10vw;
+}
+.banner-titel{
+    text-align: center;
+    max-width: 865px;
+    margin: 10px auto;
+}
+.banner-titel h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.banner-titel p{
+    margin-bottom: 20px;
+}
+.banner img{
+    width: 100%;
+    margin: 20px 0px;
+}
+/* header section end here */
+
+.features-sec{
+    display: flex;
+    align-items: center;
+    padding: 70px 12vw;
+    justify-content: center;
+    gap: 75px;
+}
+.features-sec .grp-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    flex: 50%;
+}
+.features-sec .grp-img img{
+    width: 100%;
+}
+.features-content{
+    flex: 50%;
+}
+.features-content p{
+    margin: 20px 0px;
+}
+.features-content h1{
+    font-size: 3rem;
+}
+.features-content .features-titel-oreng{
+    color: orange;
+}
+
+.enjoy-container{
+    padding: 20px 10vw;
+    display: flex;
+    align-items: center;
+    gap: 140px;
+}
+.enjoy-container .enjoy-content h1{
+    padding-left: 10px;
+    border-left: 5px solid orange;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.enjoy-container .enjoy-content p{
+    max-width: 585px;
+    margin-bottom: 30px;
+}
+.enjoy-cart1{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba(159, 159, 159, 0.301);
+    max-width: 585px;
+    margin-bottom: 20px;
+}
+.enjoy-cart1 h2{
+    margin-bottom: 20px;
+}
+
+.enjoy-img img{
+    width: 80%;
+}
+.img-and-btn{
+    position: relative;
+}
+.enjoy-img button{
+    background-color: orange;
+    padding: 45px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+}
+.enjoy-img button h1{
+    font-size: 4rem;
+    color: white;
+}
+.enjoy-img button p{
+    font-size: 1.5rem;
+    color: white;
+}
+.some-fact{
+    padding: 20px 10vw;
+}
+.some-fact h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.some-fact p{
+    margin-bottom: 20px;
+    max-width: 585px;
+}
+.cart-box{
+    padding: 20px 12vw;
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.cart-box .box{
+    padding: 40px 60px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+.cart-box .box h1{
+    font-size: 3rem;
+    margin: 10px 0;
+}
+
+.sponsore{
+    padding: 20px 10vw;
+    text-align: center;
+}
+.sponsore .sponsore-titel h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.sponsore .sponsore-titel p{
+    max-width: 540px;
+    margin: 0px auto;
+}
+.sponsore-logo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.footer-content{
+    padding: 130px 10vw 215px 10vw;
+    text-align: center;
+}
+.footer-content p{
+    padding: 40px 15vw;
+    background-color: rgba(255, 144, 14, 0.10);
+}
+
+
+
+
+@media screen and (max-width: 576px) {
+    nav,
+    ul,
+    .features-sec,
+    .enjoy-container,
+    .sponsore-logo,
+    .cart-box
+    {
+        flex-direction: column;
+    }
+    .features-content h1{
+        font-size: 2rem;
+    }
+    .banner-titel h1{
+        font-size: 3rem;
+    }
+    .enjoy-container{
+        gap: 20px;
+    }
+    .enjoy-img button{
+        background-color: orange;
+        padding: 25px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+    .enjoy-img button h1{
+        font-size: 3rem;
+    }
+    .enjoy-container .enjoy-content h1{
+        font-size: 2rem; 
+    }
+    .sponsore-logo,
+    .cart-box{
+        gap: 20px;
+        align-items: center;
+    }
+    .sponsore-logo img{
+        width: 60%;
+    }
+    .footer-content p{
+        padding: 20px 5px;
+        background-color: rgba(255, 144, 14, 0.10);
+        font-size: 10px;
+    }
+    
+.footer-content{
+    padding: 30px 8vw 50px 8vw;
+    text-align: center;
+}
+}
