@@ -93,7 +93,8 @@ nav ul li{
     padding: 20px 10vw;
     display: flex;
     align-items: center;
-    gap: 140px;
+    gap: 120px;
+    justify-content: center;
 }
 .enjoy-container .enjoy-content h1{
     padding-left: 10px;
@@ -117,7 +118,7 @@ nav ul li{
 }
 
 .enjoy-img img{
-    width: 80%;
+    width: 100%;
 }
 .img-and-btn{
     position: relative;
